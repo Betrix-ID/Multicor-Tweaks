@@ -1,0 +1,638 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:tools="http://schemas.android.com/tools"
+	tools:showIn="@layout/activity_main"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	android:scrollbars="none"
+	android:fitsSystemWindows="false"
+	android:fillViewport="true">
+
+	<LinearLayout
+		android:orientation="vertical"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		android:padding="16dp"
+		android:background="#FFF0D1"
+		android:baselineAligned="true">
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="horizontal"
+			android:gravity="center_vertical"
+			android:paddingStart="16dp"
+			android:paddingEnd="16dp"
+			android:layout_marginBottom="9dp">
+
+			<TextView
+				android:id="@+id/header_title"
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:background="@drawable/bg_toggle_container"
+				android:text="ıllıllı Multicor Priority ıllıllı"
+				android:textSize="17sp"
+				android:textStyle="bold"
+				android:textColor="#484642"
+				android:gravity="start|center_vertical"
+				android:paddingHorizontal="16dp"
+				android:paddingVertical="8dp"/>
+
+			<LinearLayout  
+				android:id="@+id/toggle_group"  
+				android:layout_width="wrap_content"  
+				android:layout_height="35dp"  
+				android:orientation="horizontal"  
+				android:background="@drawable/bg_toggle_container"  
+				android:padding="1dp"  
+				android:layout_marginStart="8dp">
+
+				<!-- Tombol ID -->
+				<TextView  
+					android:id="@+id/btn_si"  
+					android:layout_width="60dp"  
+					android:layout_height="match_parent"  
+					android:gravity="center"  
+					android:text="ID"  
+					android:textStyle="bold"  
+					android:textSize="13sp"
+					android:textColor="#FFF0D1"  
+					android:background="@drawable/bg_toggle_selected"/>
+
+				<!-- Garis pemisah -->
+				<View  
+					android:layout_width="1dp"  
+					android:layout_height="match_parent"  
+					android:background="#484642"/>
+
+				<!-- Tombol TR -->
+				<TextView  
+					android:id="@+id/btn_tr"  
+					android:layout_width="60dp"  
+					android:layout_height="match_parent"  
+					android:gravity="center"  
+					android:text="TM"  
+					android:textStyle="bold"  
+					android:textSize="13sp"
+					android:textColor="#4A4642"  
+					android:background="@drawable/bg_toggle_unselected"/>
+
+				<!-- Garis pemisah -->
+				<View  
+					android:layout_width="1dp"  
+					android:layout_height="match_parent"  
+					android:background="#484642"/>
+
+				<!-- Tombol US -->
+				<TextView  
+					android:id="@+id/btn_iec"  
+					android:layout_width="60dp"  
+					android:layout_height="match_parent"  
+					android:gravity="center"  
+					android:text="US"  
+					android:textStyle="bold"  
+					android:textSize="13sp"
+					android:textColor="#4A4642"  
+					android:background="@drawable/bg_toggle_unselected"/>
+			</LinearLayout>
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="170dp"
+			android:orientation="horizontal"
+			android:layout_gravity="center"
+			android:background="@drawable/bg_daemon"
+			android:padding="16dp"
+			android:gravity="center_vertical"
+			android:layout_marginBottom="0dp">
+
+			<LinearLayout
+				android:layout_width="0dp"
+				android:layout_height="wrap_content"
+				android:layout_weight="1"
+				android:orientation="vertical"
+				android:layout_marginBottom="30dp">
+
+				<TextView
+					android:id="@+id/daemon_status_text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Working ✨"
+					android:textSize="28sp"
+					android:textStyle="bold"
+					android:textColor="#FFF0D1"
+					android:layout_marginBottom="21dp"/>
+
+				<TextView
+					android:id="@+id/pid_text"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:text="Daemon PID: not found"
+					android:textSize="16sp"
+					android:textColor="#FFF0D1"/>
+
+			</LinearLayout>
+
+			<ImageView
+				android:layout_width="165dp"
+				android:layout_height="165dp"
+				android:src="@drawable/zte"
+				android:adjustViewBounds="true"
+				android:layout_gravity="center_vertical"/>
+
+		</LinearLayout>
+
+		<FrameLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_marginTop="16dp"
+			android:background="@drawable/pink"
+			android:padding="16dp">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:gravity="center_vertical"
+					android:layout_marginBottom="16dp">
+
+					<ImageView
+						android:layout_width="25dp"
+						android:layout_height="25dp"
+						android:layout_marginEnd="12dp"
+						android:src="@drawable/ic_app"
+						android:tint="#484642"/>
+
+					<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:orientation="vertical">
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="Multicor Priority"
+							android:textColor="#484642"
+							android:textStyle="bold"
+							android:textSize="15sp"
+							android:layout_marginBottom="2dp"/>
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="Release (6-06-2025)"
+							android:textColor="#BBBBBB"
+							android:textSize="12sp"/>
+
+					</LinearLayout>
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_marginBottom="10dp"
+					android:gravity="center_vertical">
+
+					<ImageView
+						android:layout_width="25dp"
+						android:layout_height="25dp"
+						android:layout_marginEnd="12dp"
+						android:src="@drawable/ic_state"/>
+
+					<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:orientation="vertical">
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="Current State"
+							android:textColor="#484642"
+							android:textSize="15sp"
+							android:layout_marginBottom="3dp"/>
+
+						<TextView
+							android:id="@+id/Current_state"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:background="@drawable/bg_state_output"
+							android:textColor="#FFF0D1"
+							android:textStyle="bold"
+							android:textSize="11sp"
+							android:paddingStart="10dp"
+							android:paddingEnd="10dp"
+							android:paddingTop="4dp"
+							android:paddingBottom="4dp"
+							android:gravity="center"/>
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_marginBottom="10dp"
+					android:gravity="center_vertical">
+
+					<ImageView
+						android:layout_width="25dp"
+						android:layout_height="25dp"
+						android:layout_marginEnd="12dp"
+						android:src="@drawable/ic_kernel"
+						android:tint="#484642"/>
+
+					<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:orientation="vertical">
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="Kernel"
+							android:textColor="#484642"
+							android:textSize="15sp"/>
+
+						<TextView
+							android:id="@+id/kernel_value"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textColor="#AAAAAA"
+							android:textSize="14sp"/>
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_marginBottom="10dp"
+					android:gravity="center_vertical">
+
+					<ImageView
+						android:layout_width="25dp"
+						android:layout_height="25dp"
+						android:layout_marginEnd="12dp"
+						android:src="@drawable/ic_chipset"
+						android:tint="#484642"/>
+
+					<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:orientation="vertical">
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="Chipset"
+							android:textColor="#484642"
+							android:textSize="15sp"/>
+
+						<TextView
+							android:id="@+id/Chipset_value"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textColor="#AAAAAA"
+							android:textSize="14sp"/>
+
+					</LinearLayout>
+
+				</LinearLayout>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal"
+					android:layout_marginBottom="4dp"
+					android:gravity="center_vertical">
+
+					<ImageView
+						android:layout_width="25dp"
+						android:layout_height="25dp"
+						android:layout_marginEnd="12dp"
+						android:src="@drawable/ic_android"
+						android:tint="#484642"/>
+
+					<LinearLayout
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:orientation="vertical">
+
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="Android API"
+							android:textColor="#484642"
+							android:textSize="15sp"/>
+
+						<TextView
+							android:id="@+id/Andro_value"
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:textColor="#AAAAAA"
+							android:textSize="14sp"/>
+
+					</LinearLayout>
+				</LinearLayout>
+			</LinearLayout>
+		</FrameLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:background="@drawable/pink"
+			android:padding="16dp"
+			android:layout_marginTop="10dp"
+			android:layout_gravity="center"
+			android:layout_marginBottom="12dp">
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Configuration"
+				android:textStyle="bold"
+				android:textSize="20sp"
+				android:layout_marginBottom="12dp"
+				android:textColor="#484642"/>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:gravity="center_vertical"
+				android:layout_marginBottom="12dp">
+
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="Disable logcat window"
+					android:textColor="#484642"
+					android:textSize="16sp"/>
+
+				<com.multicor.priority.InfoDialog
+					android:id="@+id/info_logger"
+					android:layout_width="16dp"
+					android:layout_height="16dp"
+					android:src="@drawable/ic_info"
+					android:layout_marginEnd="8dp"/>
+
+				<com.multicor.priority.logd
+					android:id="@+id/switch_kill_logger"
+					android:layout_width="50dp"
+					android:layout_height="27dp"
+					android:layout_marginEnd="15dp"
+					android:clickable="true"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:gravity="center_vertical"
+				android:layout_marginBottom="12dp">
+
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="Reduce Mode"
+					android:textColor="#484642"
+					android:textSize="16sp"/>
+
+				<com.multicor.priority.InfoDialog
+					android:id="@+id/info_lite"
+					android:layout_width="16dp"
+					android:layout_height="16dp"
+					android:src="@drawable/ic_info"
+					android:layout_marginEnd="8dp"/>
+
+				<com.multicor.priority.logd
+					android:id="@+id/switch_lite_mode"
+					android:layout_width="50dp"
+					android:layout_height="27dp"
+					android:layout_marginEnd="15dp"
+					android:clickable="true"/>
+
+			</LinearLayout>
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:gravity="center_vertical"
+				android:layout_marginBottom="12dp">
+
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="Brecer I/O "
+					android:textColor="#484642"
+					android:textSize="16sp"/>
+
+				<com.multicor.priority.InfoDialog
+					android:id="@+id/info_ionice"
+					android:layout_width="16dp"
+					android:layout_height="16dp"
+					android:src="@drawable/ic_info"
+					android:layout_marginEnd="8dp"/>
+
+				<com.multicor.priority.logd
+					android:id="@+id/switch_ioince"
+					android:layout_width="50dp"
+					android:layout_height="27dp"
+					android:layout_marginEnd="15dp"
+					android:clickable="true"/>
+
+			</LinearLayout>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Refresh Rate Settings"
+				android:textColor="#484642"
+				android:textSize="16sp"
+				android:layout_marginTop="16dp"/>
+
+			<Spinner
+				android:id="@+id/refresh_rate_spinner"
+				android:layout_width="match_parent"
+				android:layout_height="48dp"
+				android:spinnerMode="dropdown"
+				android:background="@drawable/background"
+				android:popupBackground="#67361B"
+				android:layout_marginTop="8dp"/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Renderer Settings Usage"
+				android:textColor="#484642"
+				android:textSize="16sp"
+				android:layout_marginTop="12dp"/>
+
+			<Spinner
+				android:id="@+id/power_mode_spinner"
+				android:layout_width="match_parent"
+				android:layout_height="48dp"
+				android:spinnerMode="dropdown"
+				android:background="@drawable/background"
+				android:popupBackground="#67361B"
+				android:layout_marginTop="8dp"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:background="@drawable/pink"
+			android:padding="16dp"
+			android:layout_gravity="center">
+
+			<LinearLayout
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:orientation="horizontal"
+				android:gravity="center_vertical"
+				android:layout_marginBottom="12dp">
+
+				<TextView
+					android:layout_width="0dp"
+					android:layout_height="wrap_content"
+					android:layout_weight="1"
+					android:text="Modification"
+					android:textColor="#484642"
+					android:textSize="20sp"/>
+
+				<ImageView
+					android:id="@+id/info_loop"
+					android:layout_width="25dp"
+					android:layout_height="25dp"
+					android:src="@drawable/ic_info"
+					android:layout_marginEnd="8dp"/>
+			</LinearLayout>
+
+			<Button
+				android:id="@+id/btn_edit_gamelist"
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:text="Edit Gamelist"
+				android:textAllCaps="false"
+				android:background="@drawable/bg_log"
+				android:textColor="#FFF0D1"
+				android:layout_marginBottom="12dp"/>
+
+			<Spinner
+				android:id="@+id/Mode_settings"
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:spinnerMode="dropdown"
+				android:background="@drawable/bg_log"
+				android:popupBackground="#67361B"
+				android:layout_marginBottom="12dp"/>
+
+			<Button
+				android:id="@+id/btn_Current_logs"
+				android:layout_width="match_parent"
+				android:layout_height="50dp"
+				android:text="Current Control"
+				android:textAllCaps="false"
+				android:background="@drawable/bg_log"
+				android:textColor="#FFF0D1"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_gravity="center"
+			android:background="@drawable/pink"
+			android:padding="16dp"
+			android:gravity="start"
+			android:layout_marginBottom="12dp"
+			android:layout_marginTop="11dp">
+
+			<TextView
+				android:id="@+id/support_title"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Credit️"
+				android:textColor="#1F1B25"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				android:layout_marginBottom="8dp"
+				android:textAlignment="viewStart"/>
+
+			<TextView
+				android:id="@+id/support_message_1"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="@Rem01, is a very experienced Android developer,\nbesides that Multicor was created because he was inspired\nby Encore Tweak from him."
+				android:textColor="#AAAAAA"
+				android:textSize="15sp"
+				android:gravity="start"
+				android:textAlignment="viewStart"/>
+
+		</LinearLayout>
+
+		<LinearLayout
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:layout_gravity="center"
+			android:background="@drawable/pink"
+			android:padding="16dp"
+			android:gravity="start"
+			android:layout_marginTop="0dp"
+			android:layout_marginBottom="30dp">
+
+			<TextView
+				android:id="@+id/support_title_2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Support Me️️"
+				android:textColor="#484642"
+				android:textSize="20sp"
+				android:textStyle="bold"
+				android:layout_marginBottom="8dp"
+				android:textAlignment="viewStart"/>
+
+			<TextView
+				android:id="@+id/support_message_2"
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:text="Multicor Priority is, and always will be, free for you,\nand everyone. You can however show me that you care\nby making a donation."
+				android:textColor="#AAAAAA"
+				android:textSize="15sp"
+				android:gravity="start"
+				android:textAlignment="viewStart"/>
+
+		</LinearLayout>
+	</LinearLayout>
+</ScrollView>
+

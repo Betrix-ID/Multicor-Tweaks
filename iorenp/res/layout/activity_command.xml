@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout  
+	xmlns:android="http://schemas.android.com/apk/res/android"  
+	android:layout_width="match_parent"  
+	android:layout_height="match_parent"  
+	android:orientation="vertical"  
+	android:padding="16dp"  
+	android:background="#FFF0D1">  
+
+	<LinearLayout  
+		android:layout_width="match_parent"  
+		android:layout_height="48dp"  
+		android:orientation="horizontal"  
+		android:background="@drawable/bg_search_rounded"  
+		android:paddingStart="12dp"  
+		android:paddingEnd="8dp"  
+		android:gravity="center_vertical"  
+		android:layout_marginBottom="16dp">  
+
+		<ImageView  
+			android:layout_width="24dp"  
+			android:layout_height="24dp"  
+			android:src="@android:drawable/ic_menu_search"  
+			android:tint="#4A4642"  
+			android:layout_marginEnd="8dp"/>  
+
+		<EditText  
+			android:id="@+id/input_command"  
+			android:layout_width="0dp"  
+			android:layout_height="wrap_content"  
+			android:layout_weight="1"  
+			android:hint="Ketik perintah"  
+			android:inputType="textMultiLine"
+			android:maxLines="6"
+			android:scrollHorizontally="false"
+			android:gravity="top|start"
+			android:textColor="#000000"  
+			android:textColorHint="#888888"  
+			android:background="@android:color/transparent"  
+			android:textSize="16sp"/>  
+
+		<Button  
+			android:id="@+id/btn_run_command"  
+			android:layout_width="wrap_content"  
+			android:layout_height="wrap_content"  
+			android:text="Kirim"  
+			android:textAllCaps="false"  
+			android:textColor="#888888"  
+			android:textSize="14sp"  
+			android:minHeight="0dp"  
+			android:minWidth="0dp"  
+			android:background="@android:color/transparent"  
+			android:paddingStart="12dp"  
+			android:paddingEnd="12dp"  
+			android:layout_marginStart="8dp"  
+			android:layout_marginTop="4dp"  
+			android:layout_marginBottom="4dp"/>  
+
+	</LinearLayout>  
+
+	<ScrollView  
+		android:id="@+id/output_scroll"  
+		android:layout_width="match_parent"  
+		android:layout_height="0dp"  
+		android:layout_weight="1"  
+		android:background="#FFF0D1"  
+		android:padding="12dp"  
+		android:scrollbars="vertical">  
+
+		<TextView  
+			android:id="@+id/output_text"  
+			android:layout_width="match_parent"  
+			android:layout_height="wrap_content"  
+			android:textColor="#333333"  
+			android:textIsSelectable="true"  
+			android:textSize="14sp"  
+			android:text="Output akan tampil di sini..."/>  
+
+	</ScrollView>  
+</LinearLayout>  
