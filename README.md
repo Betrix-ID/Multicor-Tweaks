@@ -15,7 +15,7 @@
 > - Terminal Execution command
 > - Fix Issues FC (Force closs) android +13
 
-> [!DESCELMOR]
+> [!WARNING]
 > Di updetan Terbaru mungkin agak sedikit membingungkan bagi orang awam
 > jadi untuk meminimalisir masalah bagi pengguna awam bisa langsung kunjungin aja
 > Telegram saya [Here](https://t.me/Yeye_PID)
