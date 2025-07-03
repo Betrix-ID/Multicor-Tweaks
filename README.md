@@ -1,6 +1,6 @@
 > ![Git text](/iorenp/IFS.png)
 
->  [!DESCRIPTION]
+>  [!NOTE]
 > Multicor Priority adalah aplikasi Android buatan saya yang memberikan kontrol sistem tanpa root, menggunakan ADB Shell dangan Memanfaatkan Api Sizuku secara native sehingga ringan dan aman. Versi 2.0 hadir dengan Berbagai perbikan bug and penambahan filtur dan kode²
 
 > [!IMPORTANT]
@@ -15,7 +15,7 @@
 > - Terminal Execution command
 > - Fix Issues FC (Force closs) android +13
 
-> [!NOTE]
+> [!DESCELMOR]
 > Di updetan Terbaru mungkin agak sedikit membingungkan bagi orang awam
 > jadi untuk meminimalisir masalah bagi pengguna awam bisa langsung kunjungin aja
 > Telegram saya [Here](https://t.me/Yeye_PID)
